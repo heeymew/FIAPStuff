@@ -1,3 +1,4 @@
+''' 
 palavra = input("Diga uma palavra: ")
 print(f"Você disse '{palavra}'")
 a = int(input('Diga um número: '))
@@ -74,7 +75,7 @@ if time == 'São Paulo':
 else:
     print('Chora mais')
 
-#Exercício 1
+# Exercício 1
 
 n1 = int(input("Digite um número:" ))
 n2 = int(input("Digite outro número: "))
@@ -84,7 +85,7 @@ if n1 >= n2:
 else:
     print (n2)
 
-#Exercício 2
+# Exercício 2
 idade = int(input('Digite a sua idade: '))
 if idade < 18:
     print ("Você não pode votar")
@@ -99,7 +100,7 @@ else:
     print("Acesso permitido, conectando ao sistema!")
 
 
-#Exercício 4
+# Exercício 4
 
 n1 = int(input("Qual a quantidade de maçãs? "))
 preco = 0.25
@@ -109,6 +110,44 @@ if(n1 >= 12):
     print(f"O preço das maçãs será de R$:{n1 * preco}")
 else:
     print(f"O preço das maçãs será de R$:{n1 * preco2}")
+
+# Exercício 5
+
+n1 = int(input("Digite um número: "))
+n2 = int(input("Digite outro número: "))
+n3 = int(input("Digite o último número: "))
+
+if n1 < n2 and n1 < n3:
+    if n2 < n3:
+        print(n1, n2, n3)
+    else: 
+        print(n1, n3, n2)
+elif n2 < n1 and n2 < n3:
+    if(n1 < n3):
+        print(n2, n1, n3)
+    else: 
+        print(n2, n3, n1)
+else:
+    if n1 < n2:
+        print(n3, n1, n2)
+    else:
+        print(n3, n2, n1)
+
+# Exercício 6
+
+altura = float(input("Digite a altura (em metros): "))
+sexo = int(input("Digite o sexo (1 para feminino, 2 para masculino): "))
+
+if sexo == 1:
+    peso_ideal = (62.1 * altura) - 44.7
+    print(f"Peso ideal para mulher: {round(peso_ideal, 2)} kg")
+elif sexo == 2:
+    peso_ideal = (72.0 * altura) - 58.0
+    print(f"Peso ideal para homem: {round(peso_ideal, 2)} kg")
+else:
+    print("Código de sexo inválido. Use 1 para feminino e 2 para masculino.")
+
+Extras da aula
 
 salario = float(input("Digite o seu salário: "))
 if salario < 1903.98:
@@ -125,8 +164,12 @@ else:
     salario = salario - desconto
 print(f"O desconto do seu salário foi de R$: {desconto}e o valor final será R${salario}")
 
+Exercício vogal 
+
 vogal = input("Digite uma letra: ")
 if vogal == ['A' or 'E' or 'I' or 'O' or 'U']:
     print(f"A letra que você digitou é uma vogal")
 else:
     print("A letra que você digitou é uma consoante")
+
+'''
