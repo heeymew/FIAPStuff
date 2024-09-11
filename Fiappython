@@ -147,6 +147,27 @@ elif sexo == 2:
 else:
     print("Código de sexo inválido. Use 1 para feminino e 2 para masculino.")
 
+
+# Exercício 7
+
+lados = int(input('Quantos lados o polígono tem? 3 = triangulo, 4 = quadrado, 5 = pentagono'))
+
+if lados == 3 or lados == 4:
+    base = float(input('Digite a base do polígono em cm'))
+    altura = float(input('Digite a altura do poligono em cm'))
+if lados == 3: 
+    calculo = base * altura / 2
+    print(f'Esse é um triângulo e sua base é: {calculo}')
+elif lados == 4:
+    calculos = base * altura
+    print(f'Esse é um quadrado e sua base é: {calculo}')
+elif lados == 5:
+    calculos = 
+elif lados => 6:
+    print('Polígono não identificado')
+else: 
+    print('Esse não é um polígono')
+
 Extras da aula
 
 salario = float(input("Digite o seu salário: "))
