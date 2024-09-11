@@ -159,10 +159,10 @@ if lados == 3:
     calculo = base * altura / 2
     print(f'Esse é um triângulo e sua base é: {calculo}')
 elif lados == 4:
-    calculos = base * altura
+    calculo = base * altura
     print(f'Esse é um quadrado e sua base é: {calculo}')
 elif lados == 5:
-    calculos = 
+    calculo = 
 elif lados => 6:
     print('Polígono não identificado')
 else: 
