@@ -187,10 +187,10 @@ print(f"O desconto do seu salário foi de R$: {desconto}e o valor final será R$
 
 Exercício vogal 
 
-vogal = input("Digite uma letra: ")
-if vogal == ['A' or 'E' or 'I' or 'O' or 'U']:
-    print(f"A letra que você digitou é uma vogal")
+letra = input("Digite uma letra: ")
+if letra == 'A' or letra == 'E' or letra == 'I' or letra == 'O' or letra == 'U':
+    print(f"A letra {letra} que você digitou é uma vogal")
 else:
-    print("A letra que você digitou é uma consoante")
+    print("A letra {letra} que você digitou é uma consoante")
 
 '''
