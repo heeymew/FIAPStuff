@@ -1,115 +1,41 @@
-''' 
-palavra = input("Diga uma palavra: ")
-print(f"Você disse '{palavra}'")
-a = int(input('Diga um número: '))
-b = int(input('Diga outro número: '))
-print (a+b)
-print(f"A soma entre {a} e {b} é {a + b}")
-print(f"A subtração entre {a} e {b} é {a - b}")
-print(f"A multiplicação entre {a} e {b} é {a * b}")
-print(f"A divisão entre {a} e {b} é {a / b}")
-
-
-
-frase = "Eu"
-print(frase)
-frase = frase + " " + "me"
-print(frase)
-frase = frase + " " + "chamo"
-print(frase)
-frase = frase + " " + "Lucas"
-print(frase)
-
-
-
-a = int(input('Diga um número: '))
-b = int(input('Diga outro número: '))
-print(f"O resultado {a} > {b} é {a>b}")
-
-print(f"O resultado {a} < {b} é {a<b}")
-
-print(f"O resultado {a} >= {b} é {a>=b}")
-
-print(f"O resultado {a} <= {b} é {a<=b}")
-
-print(f"O resultado {a} == {b} é {a==b}")
-
-print(f"O resultado {a} != {b} é {a!=b}")
-
-
-
-a = int(input('Digita um número: '))
-b = int(input('Digite outro número: '))
-print(f"O resultado de {a} >= {b} or {a} <= {b}, ou seja, {a>=b} or {a<=b} {a>=b or a<=b}")
-print(f"O resultado de {a} != {b} or {a} != {b}, ou seja, {a!=b} or {a!=b} {a!=b or a!=b}")
-print(f"O resultado de {a} > {b} or {a} < {b}, ou seja, {a>b} or {a<b} {a>b or a<b}")
-print(f"O resultado de {a} == {b} or {a} == {b}, ou seja, {a==b} or {a==b} {a==b or a==b}")
-print(f"O resultado de {a} < {b} or {a} > {b}, ou seja, {a<b} or {a>b} {a<b or a>b}")
-print(f"O resultado de {a} >= {b} and {a} <= {b}, ou seja, {a>=b} and {a<=b} {a>=b or a<=b}")
-print(f"O resultado de {a} > {b} or {a} < {b}, ou seja, {a>b} or {a<b} {a!=b or a!=b}")
-print(f"O resultado de {a} > {b} or {a} < {b}, ou seja, {a>b} or {a<b} {a>=b or a<=b}")
-
-
-
-a = int(input('Digite um número: '))
-b = int(input('Digite outro número: '))
-
-print(f"O resultado de {a} > {b} and {a} < {b}, ou seja {a>b} and {a<b} é {a>b}")
-print(f"O resultado de {a} < {b} and {a} > {b}, ou seja {a<b} and {a>b} é {a<b}")
-print(f"O resultado de {a} >= {b} and {a} <= {b}, ou seja {a>=b} and {a<=b} é {a>=b}")
-print(f"O resultado de {a} <= {b} and {a} >= {b}, ou seja {a>=b} and {a<=b} é {a>=b}")
-print(f"O resultado de {a} == {b} and {a} == {b}, ou seja {a==b} and {a==b} é {a==b}")
-print(f"O resultado de {a} != {b} and {a} != {b}, ou seja {a!=b} and {a!=b} é {a!=b}")
-
-
-idade = int(input("Digite sua idade: "))
-if idade >= 18:
-    print('Pode dirigir')
-else:
-    print('Não pode dirigir')
-
-
-time = input("Pra que time você torce? \n-> ")
-if time == 'São Paulo':
-    print("O maior do Brasil")
-else:
-    print('Chora mais')
+'''
 
 # Exercício 1
 
-n1 = int(input("Digite um número:" ))
-n2 = int(input("Digite outro número: "))
+n1 = int(input("Digite um número: "))
+n2 = int(input("Digite Outro número: "))
 
-if n1 >= n2:
+if n1 > n2:
     print (n1)
-else:
+else: 
     print (n2)
 
 # Exercício 2
-idade = int(input('Digite a sua idade: '))
-if idade < 18:
-    print ("Você não pode votar")
-else:
-    print ("Você tem voto obrigatório")
+    
+idade = int(input("Digite a sua idade: "))
+if idade >= 18:
+    print("Voto obrigatório")
+else: 
+    print("Você não tem idade para votar!")
 
-#Exercício 3
-senha = int(input('Digite sua senha: '))
-if senha != 1234:
-    print("Senha Inválida, digite outra senha!")
+# Exercício 3
+senha_cadastrada = '1234'
+senha_tentativa = input("Diga sua senha: ")
+if senha_tentativa == senha_cadastrada:
+    print("Acesso liberado")
 else:
-    print("Acesso permitido, conectando ao sistema!")
-
+    print("Acesso negado")
 
 # Exercício 4
 
-n1 = int(input("Qual a quantidade de maçãs? "))
 preco = 0.25
-preco2 = 0.30
+preco1 = 0.30
+macas = int(input("Qual a quantidade de maçãs?"))
 
-if(n1 >= 12):
-    print(f"O preço das maçãs será de R$:{n1 * preco}")
-else:
-    print(f"O preço das maçãs será de R$:{n1 * preco2}")
+if macas >= 12:
+    print(f"O preço das maçãs é de R$: {macas*preco}")
+else: 
+    print(f"O preço das maçãs é de R$: {macas*preco1}")
 
 # Exercício 5
 
@@ -147,8 +73,9 @@ elif sexo == 2:
 else:
     print("Código de sexo inválido. Use 1 para feminino e 2 para masculino.")
 
+'''
 
-# Exercício 7
+# Exercício 7 e 8
 
 lados = int(input('Quantos lados o polígono tem? 3 = triangulo, 4 = quadrado, 5 = pentagono'))
 
@@ -162,13 +89,43 @@ elif lados == 4:
     calculo = base * altura
     print(f'Esse é um quadrado e sua base é: {calculo}')
 elif lados == 5:
-    calculo = 
-elif lados => 6:
+    print("Esse polígono é um pentágono")
+elif lados >= 6:
     print('Polígono não identificado')
 else: 
     print('Esse não é um polígono')
 
-Extras da aula
+
+'''
+
+# Exercícios Extras 
+
+# Exercício multa
+
+V = int(input("Digite a velocidade do seu carro em KM: "))
+multa = 0
+
+if V >= 80 and V < 100:
+    multa = V * 1.20
+elif V >= 100 and V < 120:
+    multa = V * 1.30
+elif V >= 120 and V < 150:
+    multa = V * 1.40
+else:
+    print("Sem multa")
+
+if multa > 0:
+    print(f"A multa será de R$ {multa:.2f}")
+
+# Exercício vogais    
+
+letra = input("Digite uma letra: ")
+if letra == 'A' or letra == 'E' or letra == 'I' or letra == 'O' or letra == 'U':
+    print(f"A letra {letra} que você digitou é uma vogal")
+else:
+    print("A letra {letra} que você digitou é uma consoante")
+
+# Exercício salário
 
 salario = float(input("Digite o seu salário: "))
 if salario < 1903.98:
@@ -183,14 +140,6 @@ else:
     aliquota = 0.275
     desconto: float = salario*aliquota
     salario = salario - desconto
-print(f"O desconto do seu salário foi de R$: {desconto}e o valor final será R${salario}")
-
-Exercício vogal 
-
-letra = input("Digite uma letra: ")
-if letra == 'A' or letra == 'E' or letra == 'I' or letra == 'O' or letra == 'U':
-    print(f"A letra {letra} que você digitou é uma vogal")
-else:
-    print("A letra {letra} que você digitou é uma consoante")
+print(f"O desconto do seu salário foi de R$: {desconto}e o valor final será R${salario}")    
 
 '''
