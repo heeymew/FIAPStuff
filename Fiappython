@@ -37,7 +37,7 @@ if macas >= 12:
 else: 
     print(f"O preço das maçãs é de R$: {macas*preco1}")
 
-# Exercício 5
+# Exercício 5 Força bruta
 
 n1 = int(input("Digite um número: "))
 n2 = int(input("Digite outro número: "))
@@ -78,6 +78,25 @@ if n3 < menor:
     maior = n3
     meio = n1 + n2 + n3 - maior - menor
 print(menor, meio, maior)
+
+# Exercício 5 com aux 
+
+n1 = int(input("Diga o primeiro lado: "))
+n2 = int(input("Diga o segundo lado: "))
+n3 = int(input("Diga o terceiro lado: "))
+if n1 > n2 and n1 > n3:
+    aux = n1
+    n1 = n3
+    n3 = aux
+elif n2 > n3:
+    aux = n2
+    n2 = n3
+    n3 = aux
+if n1 > n2:
+    aux = n1
+    n1 = n2
+    n2 = aux
+print(n1, n2, n3)
 
 # Exercício 6
 
