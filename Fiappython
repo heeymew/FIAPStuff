@@ -57,7 +57,27 @@ else:
     if n1 < n2:
         print(n3, n1, n2)
     else:
-        print(n3, n2, n1)
+        print(n3, n2, n1)   
+
+# Exercício 5 maior menor
+
+n1 = int(input("Digite o seu primeiro número: "))
+n2 = int(input("Digite o seu segundo número: "))
+n3 = int(input("Digite o seu terceiro número: "))
+
+maior = n1
+
+if n2 > maior:
+    maior = n2
+if n3 > maior:
+    maior = n3
+menor = n1
+if n2 < menor:
+    maior = n2
+if n3 < menor:
+    maior = n3
+meio = n1 + n2 + n3 - maior - menor
+print(menor, meio, maior)
 
 # Exercício 6
 
@@ -72,8 +92,6 @@ elif sexo == 2:
     print(f"Peso ideal para homem: {round(peso_ideal, 2)} kg")
 else:
     print("Código de sexo inválido. Use 1 para feminino e 2 para masculino.")
-
-'''
 
 # Exercício 7 e 8
 
@@ -95,8 +113,19 @@ elif lados >= 6:
 else: 
     print('Esse não é um polígono')
 
+# Exercício 9
 
-'''
+n1 = int(input("Digite o primeiro número: "))
+n2 = int(input("Digite o segundo número: "))
+n3 = int(input("Digite o terceiro número: "))
+
+maior = n1
+
+if n2 > n1:
+    maior = n2
+elif n3 > n1:
+    maior = n3
+print(maior)
 
 # Exercício 10
 
@@ -124,7 +153,6 @@ elif a > 90 or b> 90 or c > 90:
 else:
     print("Agudo")
 
-'''
 
 # Exercícios Extras 
 
