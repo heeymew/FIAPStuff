@@ -163,11 +163,3 @@ else:
 '''
 
 # Exercício 7
-
-tabuada = int(input('Digite seu número que quer gerar a tabuada: '))
-contador = 0
-
-while len(tabuada) <= 10:
-    contador *= tabuada
-else:
-    print('Digite um número válido')
