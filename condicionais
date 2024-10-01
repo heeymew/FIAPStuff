@@ -37,7 +37,7 @@ if macas >= 12:
 else: 
     print(f"O preço das maçãs é de R$: {macas*preco1}")
 
-# Exercício 5 Força bruta
+# Exercício 5
 
 n1 = int(input("Digite um número: "))
 n2 = int(input("Digite outro número: "))
@@ -57,7 +57,7 @@ else:
     if n1 < n2:
         print(n3, n1, n2)
     else:
-        print(n3, n2, n1)   
+        print(n3, n2, n1)
 
 # Exercício 5 maior menor
 
@@ -172,21 +172,23 @@ elif a > 90 or b> 90 or c > 90:
 else:
     print("Agudo")
 
-
+    
 # Exercícios Extras 
+
 
 # Exercício multa
 
-V = int(input("Digite sua velocidade em KM: "))
+V = int(input("Digite a velocidade do seu carro em KM: "))
 multa = 0
 
-if V > 80 and V < 100:
+if V >= 80 and V < 100:
     multa = V * 1.20
-elif V > 100 and V <= 120:
-    multa = (V + multa) * 1.30
+elif V >= 100 and V < 120:
+    multa = (V * 1.20) + (V * 0.30)  
+elif V >= 120 and V < 150:
+    multa = (V * 1.20) + (V * 0.40)  
 else:
-    multa = (V + multa * 2) * 1.40
-print(multa)
+    print("Sem multa")
 
 if multa > 0:
     print(f"A multa será de R$ {multa:.2f}")
