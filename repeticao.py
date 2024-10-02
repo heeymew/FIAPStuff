@@ -85,7 +85,7 @@ while len(nome) < 3:
     nome = input('Digite o seu nome: ')
 
 idade = int(input('Digite a sua idade: '))
-while idade < 0 and idade > 150:
+while idade < 0 or idade > 150:
     print('Digite novamente a sua idade')
     idade = int(input('Digite a sua idade: '))
 
