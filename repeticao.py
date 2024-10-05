@@ -235,6 +235,21 @@ while i < n1:
     sucessor = sucessor + maior
     print(sucessor)
 
+# Exercício 8 presetados
+
+n1 = 1
+n2 = 1
+i = 1
+
+print(n1)
+
+while i < 20:
+    n3 = n1 + n2
+    n1 = n2
+    n2 = n3
+    i += 1
+    print(n1)
+
 # Exercício 8 infinito + break para parar o código quando quiser
 
 a = 1
@@ -266,6 +281,17 @@ while i < qtd:
 print(f'{pares} pares e {impares} impares')
 
 # Exercício 10
+
+j = int(input('Digite o número que você quer calcular o fatorial: '))
+i = 1
+aux = j
+
+while j > 0:
+    i *= j
+    j -= 1
+print(f'O fatorial final de {aux} é de {i}')
+
+# Exercício 10 professor
 
 fator = 1
 i = 1
@@ -307,7 +333,101 @@ while n / 1:
         print('Esse número é primo')
         break
 
-'''
+# Exercício 12
+
+i = 1
+qtd = 5
+soma = 0
+
+while i <= qtd:
+    contador = float(input('Digite seus números para calcular a média aritmética: '))
+    soma += contador
+    i += 1
+
+print(f'O valor da soma dos números é de: {soma}')
+
+dividir = float(input('Por quanto você deseja dividir a sua soma? '))
+
+media = soma / dividir
+
+print(f'A média aritmetica dos números digitados é de: {media:.2f}')
 
 # Exercício 13
+
+ano_inicial = 1995
+ano_atual = 2024
+salario_inicial = float(input('Digite o seu salário inicial em R$: '))
+porcentagem = 0.015
+salario_atual = salario_inicial
+
+ano = ano_inicial + 1
+
+while ano <= ano_atual:
+    aumento = salario_atual * (1 + porcentagem)    
+    salario_atual = aumento
+    porcentagem *= 2
+    print(f'Ano: {ano}\n')
+    print(f'Porcentagem: {porcentagem}')
+    print(f'salário: {salario_atual:.2f}')
+    print(f'aumento: {aumento:.2f}\n')
+    ano += 1
+
+print(f'O salário atual é de {salario_atual:.2f}')
+
+# Exercício 14
+
+
+
+
+# Exercício 15
+
+candidato1 = 'Jose'
+candidato2 = 'Joao'
+candidato3 = 'Joana'
+candidato4 = 'Rosana'
+voto5 = 'Nulo'
+voto6 = 'Branco'
+
+qtd_votos = 10
+i = 0
+
+contador_voto1 = 0
+contador_voto2 = 0
+contador_voto3 = 0
+contador_voto4 = 0
+contador_voto5 = 0
+contador_voto6 = 0
+
+while i <= qtd_votos:
+    voto = input('Digite o número do seu seu voto: ')
+    if voto.isnumeric():
+        voto = int(voto)
+        if voto == 1:
+            contador_voto1 += 1
+        elif voto == 2:
+            contador_voto2 += 1
+        elif voto == 3:
+            contador_voto3 += 1
+        elif voto == 4:
+            contador_voto4 += 1
+        elif voto == 5:
+            contador_voto5 += 1
+        elif voto == 6:
+            contador_voto6 += 1
+        else:
+            print('Por favor, digite um número válido para o seu voto (entre 1 e 6): ')
+        i += 1
+    else:
+        print('Voto inválido, digite um número válido para o seu voto: ')
+
+print(f'A quantidade de votos no candidato: {candidato1} é de: {contador_voto1}')
+print(f'A quantidade de votos no candidato: {candidato2} é de: {contador_voto2}')
+print(f'A quantidade de votos no candidato: {candidato3} é de: {contador_voto3}')
+print(f'A quantidade de votos no candidato: {candidato4} é de: {contador_voto4}')
+print(f'A quantidade de votos nulos é de: {contador_voto5}')
+print(f'A quantidade de votos em branco é de: {contador_voto6}')
+
+
+print(f'A porcentagem de votos nulos é de: {contador_voto5 * 100 / qtd_votos}% de {qtd_votos}')
+print(f'A porcentagem de votos brancos é de: {contador_voto6 * 100 / qtd_votos}% de {qtd_votos}')
 
