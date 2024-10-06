@@ -18,7 +18,7 @@ while nota < 0 or nota > 10:
     
 print(f'Sua nota é: {nota}')
 
-# Exercício 2
+# Exercício 2 com saída correta e lista
 
 lista = []
 nome = input('Digite seu nome: ')
@@ -29,7 +29,7 @@ while len(nome) < 3:
 lista.append(nome)
 
 idade = int(input('Digite sua idade: '))
-while idade < 0 and idade > 150:
+while idade < 0 or idade > 150:
     print('Por favor digite uma idade válida!')
     idade = int(input('Digite sua idade: '))
 lista.append(idade)
@@ -48,10 +48,10 @@ while sexo not in sexo_valido:
     print('Por favor digite um sexo válido')
 
 if sexo == 'F':
-    print('Você escolheu feminino')
+    print('Você escolheu Feminino')
     lista.append('Feminino')
 else:
-    print('Você escolheu masculino')
+    print('Você escolheu Masculino')
     lista.append('Masculino')
 
 estado_civil_valido = ['S', 'C', 'V', 'D']
@@ -71,7 +71,7 @@ else:
 
 lista.append(estado_civil_inteiro)
 
-print(f'Seu nome é {nome}, sua idade é {idade}, seu salário é de R${salario}, seu sexo é {sexo} e seu estado civil é {estado_civil_inteiro}')
+print(f'Seu nome é {nome}, sua idade é {idade}, seu salário é de R${salario}, seu sexo é {lista[3]} e seu estado civil é {estado_civil_inteiro}')
 
 # Exercício 2 simplificado
 
