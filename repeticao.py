@@ -431,3 +431,21 @@ print(f'A quantidade de votos em branco é de: {contador_voto6}')
 print(f'A porcentagem de votos nulos é de: {contador_voto5 * 100 / qtd_votos}% de {qtd_votos}')
 print(f'A porcentagem de votos brancos é de: {contador_voto6 * 100 / qtd_votos}% de {qtd_votos}')
 
+for i in range(10, 0, -2): #ínicio do loop, fim, e passo
+    print(i)
+
+fatorial = 1
+numero = 5
+for i in range (1, numero+1):
+    fatorial *= i
+print(fatorial)
+
+numero = 5
+fatorial = numero
+for i in range(num-1, 1, -1):
+    fatorial *= 1
+print(fatorial)
+
+numero = 5
+for i in range (1, 11):
+    print(f'{numero} x {i} = {numero*i}')
