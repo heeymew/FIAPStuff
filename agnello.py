@@ -10,8 +10,14 @@ while True:
     idade = input('Digite a sua idade: ')
     if idade.isnumeric():
         idade = int(idade)
-    if idade >= 18:
-        print(f'Bem vindo {nome}') 
+        if idade >= 18:
+            print(f'Bem-vindo {nome}') 
+        else:
+            print('Você deve ter 18 anos ou mais para comprar bebidas.')
+            break
+    else:
+        print('Por favor, digite uma idade válida.')
+        break
         
     vinho1 = 'Chapinha'
     vinho2 = 'Rosé'
