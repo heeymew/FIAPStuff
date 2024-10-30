@@ -208,4 +208,19 @@ notas = [5, 9, 10, 1, 4]
 media = media_notas(notas)
 print(media)
 
+# Exercício 7
+
+def invertida_lista(lista):
+    lista_invertida = []
+
+    for i in range(len(lista) - 1, -1, -1):
+        lista_invertida.append(lista[i])
+
+    return lista_invertida 
+
+
+lista = [2, 3, 1, 6, 5, 4]
+print(invertida_lista(lista))
+
+
 '''
