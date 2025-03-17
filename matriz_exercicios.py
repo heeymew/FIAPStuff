@@ -70,5 +70,25 @@ def matriz_transposta(matriz):
 
 matriz_transposta(matriz)
 
-plt.imshow(matriz)
-plt.show()
+def soma_lista(lista):
+    soma = 0
+    for elem in lista:
+        soma += elem
+    return soma
+def exercicio_notas():
+    notas = [[6, 4, 2, 0, 3, 7, 2, 10, 5, 1], [1, 5, 5, 6, 7, 8, 2, 8, 8, 4], [9, 4, 10, 10, 5, 9, 1, 2, 9, 0], [10, 5, 7, 4, 6, 6, 7, 4, 7, 1], [4, 4, 3, 0, 3, 3, 0, 0, 10, 0]]
+    mostra_matriz(notas)
+    pesos = [1,2,3,2,1]
+    soma_pesos = soma_lista(pesos)
+    notas_finais = []
+    for j in range(len(notas[0])):
+        soma = 0
+        for i in range(len(pesos)):
+            soma += pesos[i]*notas[i][j]
+        soma/= soma_pesos
+        notas_finais.append(round(soma,2))
+    print(notas_finais)
+    return
+
+matriz = cria_matriz(linhas, colunas)
+exercicio_notas()
