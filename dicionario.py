@@ -54,3 +54,25 @@ menor_preco, maior_preco = menor_maior_preco(carros['preço'])
 
 print(f'\nO carro mais caro é o {carros["nome"][maior_preco]} custando R$ {carros["preço"][maior_preco]}')
 print(f'\nO carro mais barato é o {carros["nome"][menor_preco]} custando R$ {carros["preço"][menor_preco]}\n')
+
+palavras = {}
+
+frase = 'Olha o sapo dentro do saco. O saco com o sapo dentro. O sapo batendo papo e o papo soltando o vento'
+
+for char in ',.!?:;()':
+    frase = frase.replace(char, '')
+
+frase = frase.lower().split(' ')
+
+for palavra in frase:
+    if palavra not in palavras:
+        palavras[palavra] = 1
+    else:
+        palavras[palavra] += 1  
+
+palavras_pra_remover = [palavra for palavra, contagem in palavras.items() if contagem > 1]
+
+for palavra in palavras_pra_remover:
+    palavras.pop(palavra)
+
+print(palavras)
